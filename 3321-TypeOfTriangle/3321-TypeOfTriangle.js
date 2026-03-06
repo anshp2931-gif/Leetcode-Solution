@@ -1,0 +1,23 @@
+// Last updated: 06/03/2026, 16:00:01
+/**
+ * @param {number[]} nums
+ * @return {string}
+ */
+var triangleType = function(nums) {
+    if (nums[0] + nums[1] <= nums[2] || nums[1] + nums[2] <= nums[0] || nums[0] + nums[2] <= nums[1]) {
+        return "none";
+    }
+
+
+    if (nums[0] === nums[1] && nums[1] === nums[2]) {
+        return "equilateral";
+    }
+
+   
+    if (nums[0] === nums[1] || nums[1] === nums[2] || nums[0] === nums[2]) {
+        return "isosceles";
+    }
+
+    
+    return "scalene";
+};
