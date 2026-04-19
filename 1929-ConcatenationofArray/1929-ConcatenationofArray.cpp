@@ -1,14 +1,14 @@
-// Last updated: 19/04/2026, 16:28:20
+// Last updated: 19/04/2026, 16:48:44
 1class Solution {
 2public:
-3    vector<int> getConcatenation(vector<int>& nums) {
-4       
-5    int length =nums.size();
-6    vector<int>res(length*2,0);
-7    for (int i=0;i<length;i++){
-8        res[i]=nums[i];
-9        res[i+length]=nums[i];
-10    }
-11    return res;
+3    vector<int> buildArray(vector<int>& nums) {
+4        int n = nums.size();
+5        vector<int> ans(n);
+6
+7        for (int i = 0; i < n; i++) {
+8            ans[i] = nums[nums[i]];
+9        }
+10
+11        return ans;
 12    }
 13};
