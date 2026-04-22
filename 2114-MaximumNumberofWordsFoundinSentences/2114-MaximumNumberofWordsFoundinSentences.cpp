@@ -1,4 +1,4 @@
-// Last updated: 22/04/2026, 20:15:54
+// Last updated: 22/04/2026, 20:16:06
 1class Solution {
 2public:
 3    int mostWordsFound(vector<string>& sentences) {
